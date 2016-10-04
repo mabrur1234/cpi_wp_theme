@@ -1,0 +1,648 @@
+/*
+Theme Name: clipping path india
+Theme URI: https
+://www.clippingpathindia.com
+Description: all about image.
+Author: outsource experts ltd
+Author URI: https
+://www.clippingpathindia.com
+Version: 1
+Tags: clppingpath, images masking, background remove, image manupulation
+*/
+
+
+
+
+
+@font-face{font-family:Lato;font-style:normal;font-weight:400;src:local('Lato Regular'),local('Lato-Regular'),url(fonts/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Lato;font-style:normal;font-weight:400;src:local('Lato Regular'),local('Lato-Regular'),url(fonts/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000}@font-face{font-family:Lato;font-style:normal;font-weight:700;src:local('Lato Bold'),local('Lato-Bold'),url(fonts/ObQr5XYcoH0WBoUxiaYK3_Y6323mHUZFJMgTvxaG2iE.woff2) format('woff2');unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Lato;font-style:normal;font-weight:700;src:local('Lato Bold'),local('Lato-Bold'),url(fonts/H2DMvhDLycM56KNuAtbJYA.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000}
+
+body{
+  margin:0;
+
+
+  padding:0;
+  font-family: 'Lato', sans-serif;
+font-weight: 400;
+font-size:16px !important;
+}
+a{text-decoration:none;}
+.main {
+  overflow: hidden;
+  width: 100%;
+}
+/* h1 {
+  font-size:42px;
+  font-weight:300;
+*/ }
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  overflow: hidden;
+  padding: 4px;
+}
+
+.header_area {
+  background: #50574c none repeat scroll 0 0;
+  color: #ffffff;
+  overflow: hidden;
+  width: 100%;
+}
+.header {
+    float: left;
+    margin-bottom: 103px;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.logo {
+  float: left;
+  margin-right: 0px;
+  margin-top: -15px;
+}
+
+
+.menu {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+  border: medium none !important;
+}
+.menu ul {
+}
+.menu ul li {
+    list-style: none;
+    margin-right: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: -4px;
+}
+.menu ul li a {
+  //background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  color: #b0b595 !important;
+}
+.menu ul li a :hover{}
+
+.active > a {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+}
+
+
+.ribbon {
+  align-items: center;
+  box-sizing: border-box;
+  color: rgb(83, 83, 83);
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  float: right;
+  font-family: "Lato";
+  font-size: 13px;
+  height: 53px;
+  justify-content: flex-end;
+  line-height: 21px;
+  margin-right: 1px !important;
+  padding-right: 8px;
+  width: 47.828px;
+}
+.ribbon a {
+    align-self: flex-end;
+    background: #698cd2 none repeat scroll 0 0;
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: white !important;
+    cursor: auto;
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    height: 65px;
+    line-height: 3px;
+    margin-bottom: -18px;
+    margin-left: 20px;
+    margin-right: -10px;
+    font-size: 13px;
+    padding: 3px 11px 0px 8px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 60px;
+    z-index: 1;
+}
+
+
+.ribbon h4 {
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  margin-left: -5px;
+  margin-top: -3px;
+  text-align: center;
+}
+
+.ribbon span {
+  color: white;
+  font-size: 13px;
+  font-weight: normal;
+  margin-left: -7px;
+  margin-top: 0;
+}
+.testimonial_area {
+    margin: 0 auto;
+    overflow: hidden;
+    /* margin-top: -7px !important; */
+    //width: 80%;
+}
+
+.top_queto_area {
+    margin: 92px auto -5px;
+    max-width: 258px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.top_queto_area p {
+    font-size: 24px;
+    font-weight: 300 !important;
+    margin-bottom: 24px;
+}
+
+.top_queto_area textarea {
+  background: inherit;
+  border-radius: 0;
+  color: #fff;
+  height: 86px;
+  margin-bottom: 22px;
+  margin-top: 3px;
+  overflow: hidden;
+  padding: 0 13px 43px 20px;
+  text-align: center;
+  width: 100%;
+}
+.top_queto_area span {
+    margin-top: 42px;
+    float: l;
+    float: left;
+    color: #c1b7b0;
+    margin-bottom: 50px;
+}
+
+
+
+.bottom_queto_area {
+  margin: 92px auto 67px;
+  max-width: 258px;
+  overflow: hidden;
+  text-align: center;
+}
+.bottom_queto_area p {
+    font-size: 24px;
+    font-weight: 300 !important;
+    margin-bottom: 24px;
+}
+
+.bottom_queto_area textarea {
+  background: inherit;
+  border-radius: 0;
+  color: #fff;
+  height: 86px;
+  margin-bottom: 22px;
+  margin-top: 3px;
+  overflow: hidden;
+  padding: 0 13px 43px 20px;
+  text-align: center;
+  width: 100%;
+}
+.bottom_queto_area span {
+    margin-top: 42px;
+    float: l;
+    float: left;
+    color: #c1b7b0;
+    margin-bottom: 50px;
+}
+
+.cont_btn {
+  background: #688bd1 none repeat scroll 0 0 !important;
+  border: medium none !important;
+  border-radius: 0 !important;
+  color: #fff !important;
+  float: left;
+  margin-top: 1px !important;
+  padding: 9px 85px 10px 88px !important;
+  text-align: center !important;
+}
+
+
+.how_it_work_area h1 {
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 23pxs;
+    margin-top: 65px;
+    color: #50574c;
+}
+
+.how_it_work_area {
+    background: #c1b7b0;
+}
+
+.how-work-box-area {
+  margin-bottom: 31px;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+
+
+
+
+.how-work-box {
+
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    background: #a8a4a6;
+    padding: 28px 0px 13px;
+    margin-left: 0px;
+    border-radius: 4px;
+    border: 1px solid #EEF;
+    margin-bottom:10px
+}
+
+.cpi-offer-area {
+    margin-top: 66px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 66px;
+}
+
+/* .cpi-offer-box {
+     width: 312px;
+     float: left;
+     margin-left: 24px;
+     text-align: center;
+     color: #50574c;
+*/ }
+
+.cpi-offer-box {
+  text-align: center;
+     color: #50574c;
+}
+
+.cpi-offer-box {
+  color: #50574c;
+  text-align: center;
+}
+
+
+
+
+.cpi-samples-area {
+  background: #615c60 none repeat scroll 0 0;
+  color: #fff;
+  margin-bottom: initial;
+  text-align: center;
+}
+
+a.see_ex_btn {
+  border: 1px solid #688bd1;
+  color: #688bd1;
+  display: inline-table;
+  margin-bottom: 70px;
+  margin-top: 35px;
+  padding: 12px 41px 16px;
+  text-align: center;
+}
+
+
+.cpi_services_area {
+  background: #c1b7b0 none repeat scroll 0 0;
+  overflow: hidden;
+}
+
+
+.sample-right-box h1 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  margin-top: 29px;
+  text-align: left;
+}
+.row {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.sample-left-box {
+  float: left;
+  margin-right: 0;
+}
+
+.sample-right-box {
+  background: #a8a4a6 none repeat scroll 0 0;
+  color: #fff;
+  float: left;
+ /* padding: 47px 17px;*/
+  text-align: left !important;
+  /* width: 698px;*/
+  margin-bottom: 10px;
+}
+
+.sample-left-box img {
+    width: 100%;
+}
+.best-service-area {
+  background: #615c60 url("images/teampic3.jpg") no-repeat scroll center bottom / 100% auto;
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+}
+
+.best-servce-area h1 {
+    margin-top: 22px;
+    margin-bottom: 22px;
+    overflow: hidden;
+}
+
+.best-service-box-area {
+    margin-top: 30px;
+    margin-bottom: 22px;
+    overflow: hidden;
+}
+
+.best-service-box {
+  border: 1px solid #f7a4a3;
+  color: #f7a4a3;
+  line-height: 2px;
+  margin-left: 0;
+  padding-bottom: 18px;
+  padding-top: 18px;
+}
+.our-service-area {
+  background: #c1b7b0 none repeat scroll 0 0;
+  color: #50574c;
+  overflow: hidden;
+}
+
+.our-service-area h1 {
+    text-align: center;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.our-service-box {
+  float: left;
+  margin-bottom: 11px;
+  margin-right: 0;
+  text-align: left;
+}
+
+.get-queto-bottom-area {
+  background: #b0879b none repeat scroll 0 0;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+
+.get-queto-bottom-area h1 {
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 19px;
+  margin-top: 70px;
+  text-align: center;
+}
+.get-queto-bottom-area input {
+    width: 22%;
+    background: inherit;
+    margin-top: -5px;
+    height: 42px;
+    display: table;
+    border: 1px solid #fff;
+    margin: 0 auto;
+    padding: 0px 13px 43px 20px;
+    margin-bottom: 22px;
+    overflow: hidden;
+    color:#fff;
+}
+
+.get-queto-bottom-area a {
+  background: #688bd1 none repeat scroll 0 0;
+  display: inline-table;
+  margin-bottom: 67px;
+  margin-top: 2px !important;
+  padding: 12px 85px 10px 88px;
+  text-align: center;
+  color:#fff;
+}
+
+.foot-left {
+    float: left;
+    width: 50%;
+}
+
+.foot-right {
+    width: 34%;
+    float: right;
+    text-align: right;
+    margin-top: 27px;
+}
+
+.acception_right {
+  margin-right: 0;
+}
+
+.acception_left {
+  float: left;
+  margin-right: 35px;
+  text-align: right !important;
+}
+
+.acception_left h1{
+    text-align:right !important;
+}
+
+.cpi_services_area .row {
+  margin-bottom: 72px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.cpi-samples-area h1 {
+  font-weight: 300;
+  margin-bottom: 51px;
+  margin-top: 68px;
+}
+
+.cpi_service_area_head {
+  color: white;
+  font-weight: 200;
+  margin-bottom: 67px;
+  margin-top: 67px;
+  text-align: center;
+}
+.best_service_header {
+  margin-bottom: 64px;
+  margin-top: 70px;
+}
+.how_it_work_area a {
+  border: 1px solid #688bd1;
+  color: #688bd1;
+  display: table;
+  margin: 30px auto 69px;
+  padding: 14px;
+  text-align: center;
+}
+
+.footer-area {
+  background: black none repeat scroll 0 0;
+  color: #f3f3f3;
+  font-size: 14px;
+}
+
+
+.avatar {
+  border-radius: 50px;
+  float: left;
+  margin-right: 0px;
+}
+
+
+.avatar > img {
+  border-radius: 50%;
+  margin-top: 20px;
+  width: 70%;
+}
+/* testimonials slider geometry */
+
+
+/* thats all 
+
+TESTIMONIAL STARTT
+
+/* carousel */
+#quote-carousel 
+{
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left 
+{
+  left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right 
+{
+  right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators 
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li 
+{
+  background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active 
+{
+  background: #333333;
+}
+#quote-carousel img
+{
+  width: 250px;
+  height: 100px
+}
+/* End carousel */
+
+.item blockquote {
+    border-left: none; 
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+
+.item blockquote p::before {
+  float: left;
+}
+.author {
+    text-align: right;
+    margin-bottom: 23px;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+
+/**
+
+TESTIMONIAL  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    #quote-carousel 
+    {
+      margin-bottom: 0;
+    }
+    
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) { 
+    
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+    
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;  
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+#qcontent {
+    font-family: "Lato",sans-serif !important;
+    font-size: 38px;
+    font-style: italic;
+    margin-top: -5px;
+    font-weight: 200 !important;
+    line-height: 41px !important;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.caro-inner-custom{
+    margin-left:38px;
+}
+
+.col-lg-4.cpi-offer-box.secure-onlinepay {
+  margin-top: 28px;
+}
+
+.our-service-box img{
+  margin: 0 auto;
+  text-align: center;
+}
