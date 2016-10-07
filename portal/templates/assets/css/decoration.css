@@ -1,0 +1,57 @@
+a{
+	color: #7D9BD8 !important;
+}
+
+#form1 i {
+  color: #59758b;
+}
+#form1 h4{
+	font-size:17px !important;
+}
+.main-login {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  padding-bottom: 18px;
+}
+#app {
+  background: #f1f0eb none repeat scroll 0 0;
+}
+
+.log-box-title {
+  color: #67676b;
+  margin-bottom: 19px;
+}
+.btn{
+background: #688bd1 !important;
+}
+.btn i {
+  color: #fff !important;
+  float: right;
+  margin-right: 176px;
+  margin-top: -17px;
+}
+
+.main-login{
+font-size: 14px;
+}
+.main-login label {
+  color: #929292;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.main-login input {
+  font-size: 15px !important;
+  height: 37px;
+  padding-left: 34px !important;
+  padding-top: 3px !important;
+}
+
+
+@media screen and (min-width: 1024px) {
+  .main-login {
+  	width: 342px !important;
+}
+
+
+}

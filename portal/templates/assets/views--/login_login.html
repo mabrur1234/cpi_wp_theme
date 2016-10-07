@@ -1,0 +1,59 @@
+<!-- start: LOGIN -->
+
+<div class="row">
+    <div class="main-login col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-4 col-md-3 col-md-offset-5 col-lg-3 col-lg-offset-4">
+
+
+        <!-- start: LOGIN BOX -->
+
+
+        <div class="box-login" ng-controller="loginValidationCtrl">
+            <div class="list-group">
+                <a class="list-group-item list-group-item-danger" href="#" ng-show="loginError"> {{errorMsg }} </a>
+                <a class="list-group-item list-group-item-danger" href="#" ng-show="loginSuccess"> {{successMsg }} </a>
+            </div>
+            <form class="form-login"  name="Form" id="form1" novalidate ng-submit="form.submit(Form)">
+                <fieldset>
+                    <legend>
+                        Your Account
+                    </legend>
+                <div class="form-group" ng-class="{'has-error':Form.email.$dirty && Form.email.$invalid, 'has-success':Form.email.$valid}">
+
+                    <input type="email" placeholder=" E-mail" class="form-control" name="email" ng-model="myModel.email" required>
+                    <span class="error text-small block" ng-if="Form.email.$dirty && Form.email.$error.required">Email is required.</span>
+                    <span class="error text-small block" ng-if="Form.email.$error.email">Please, enter a valid email address.</span>
+                    <span class="success text-small" ng-if="Form.email.$valid">It's a valid e-mail!</span>
+                </div>
+                <div class="form-group" ng-class="{'has-error':Form.password.$dirty && Form.password.$invalid, 'has-success':Form.password.$valid}">
+                    <input type="password" placeholder="Enter a Password" class="form-control" name="password" ng-model="myModel.password" required />
+                    <span class="error text-small block" ng-if="Form.password.$dirty && Form.password.$error.required">Password is required.</span>
+                    <span class="success text-small block" ng-if="Form.password.$valid">Ok!</span>
+                </div>
+
+                <div class="text-center">
+                    <a ui-sref="login.forgot"> forgot password?</a>
+                </div>
+                <div class="checkbox clip-check check-primary">
+                    <input type="checkbox" name="remember" id="remember" value="1">
+                    <label for="remember"> Keep me signed in </label>
+                </div>
+                <div class="form-actions">
+                    <button type="submit"  class="btn btn-blue btn-block" >
+                        Login
+                    </button>
+
+                </div>
+                    </fieldset>
+                <div class="new-account text-center">
+                    Don't have an account yet?
+                    <a ui-sref="login.registration"> Create an account </a>
+                </div>
+            </form>
+            <!-- start: COPYRIGHT -->
+
+            <!-- end: COPYRIGHT -->
+        </div>
+        <!-- end: LOGIN BOX -->
+    </div>
+</div>
+<!-- end: LOGIN -->

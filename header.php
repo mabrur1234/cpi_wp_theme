@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-<head>
-<meta name=viewport content="width=device-width, initial-scale=1">
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
+
+<html  data-ng-app="app" >
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="{{app.description}}">
+	<meta name="keywords" content="app, responsive, angular, bootstrap, dashboard, admin">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="apple-touch-fullscreen" content="yes" />
+
 
 <title>
 <?php
+
 	global $page, $paged;
 	wp_title( '|', true, 'right' );
 	bloginfo( 'name' );
@@ -19,7 +27,7 @@
 </title>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<!--<link type='text/css' href='//fonts.googleapis.com/css?family=Lato:400,700' />-->
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<!-- <link rel="preload" async href="/wp-content/themes/cpitest/fonts/1YwB1sO8YE1Lyjf12WNiUA.woff2" as="font" type="font/woff2" crossorigin>
@@ -33,7 +41,7 @@
  //$css = pushCSS();
  //$js = pushJs();
 //echo $css."\n". $js;
-//wp_head();
+wp_head();
 
 
  $page = $wp_query->query_vars["pagename"];
@@ -110,5 +118,4 @@ endif?>
 					    </div>
 				  </nav> 
 	    		</div><!--END NAV-->
-
 			</div><!--NAV container-->
